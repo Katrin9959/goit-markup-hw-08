@@ -1,0 +1,116 @@
+
+
+.footer {
+
+    background-color: #2f303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__bloc{
+        display: flex;
+        align-items: baseline;
+        gap: 70px;
+    }
+ &__cont{
+    letter-spacing: 0.03em;
+     line-height: 1.7;
+    
+     transition-property: color;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ &__logo{
+    font-family: 'Raleway', sans-serif;
+    color: var(--accent-color);
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    display:inline-flex;
+    margin-bottom: 20px;
+
+ }
+ &__map{
+    color: var(--primary-bg-color);
+    padding-inline-start: 0px;
+    margin-top: 20px;
+ }
+ &__mail{
+    color: rgba(255, 255, 255, 0.6);
+ 
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ &__tel{
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 0px;
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ &__title{
+    text-align: left;
+    color: var(--primary-bg-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+ }
+ &__icons{
+    display: block;
+    justify-content: center;
+ }
+ &__links{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+&__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+     background-color: rgba(255, 255, 255, 0.1);
+     border-radius: 50%;
+    
+     transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    }
+    &__icon{
+        fill: var(--primary-bg-color);
+    }
+
+ }
+
+ .footer__cont:hover {
+     color:var(--accent-color);
+ }
+ .footer__logo--accent{
+     color: var(--primary-bg-color);
+ }
+
+ .footer__mail:hover,
+ .footer__mail:focus{
+     color: var(--accent-color);
+ }
+ .footer__tel:hover,
+ .footer__tel:focus{
+     color: var(--accent-color);
+ }
+ 
+ .footer__feedback:not(:last-child){
+     margin-bottom: 9px;
+ }
+
+
+ .footer__link:hover{
+     background-color:var(--btn-bg-color);
+ }
+ .footer__link:focus{
+     background-color: var(--btn-bg-color);
+ }
+ 

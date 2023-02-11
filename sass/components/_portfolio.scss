@@ -1,0 +1,167 @@
+
+ .menu__item .studia{
+    color: var(--title-text-color);
+}
+
+
+ .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.bt{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+ .btns:not(:last-child){
+    margin-right: 8px;
+}
+.btn-group{
+    background-color: #f5f4fa;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    color: var(--title-text-color);
+    line-height: 26px;
+     display: flex;
+     text-align: center;
+     border-radius: 4px;
+     padding: 6px 22px;
+     border:0px;
+     cursor: pointer;
+    
+}
+
+.other{
+
+    transition-property: color, background-color, filter;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.other:focus,
+.other:hover{
+    color: var(--primary-bg-color);
+    background-color:var(--btn-bg-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+ .all{
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+    min-width: 73px;
+    padding: 6px 25px;
+
+    transition-property: color, background-color, filter;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.all:focus,
+.all:hover {
+    color:var(--btn-bg-color);
+    background-color: var(--primary-bg-color) ;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+.project{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+}
+ .bloc{
+     width: calc((100% - 30px*2) / 3);
+     
+}
+
+
+.main-foto:hover,
+.main-foto:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+.main-foto{
+    display: block;
+    outline: transparent;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.blu-foto{
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.signature{
+    position: absolute;
+    display: flex;
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    line-height: 1.56; 
+    letter-spacing: 0.03em;
+    justify-content: center;
+    align-items: center;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left:24px ;
+    padding-right:24px ;
+    color: var(--primary-bg-color);
+    opacity: 1;
+    transition: 250ms;
+    transform: translateY(+100%);
+}
+
+.main-foto:hover .signature{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.main-foto:focus .signature{
+    opacity: 1;
+    transform: translateY(0);}
+
+.poster{
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    padding-left: 23px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+}
+.project-name {
+    letter-spacing: 0.06em;
+    font-size: 18px;
+    color: var(--title-text-color);
+    font-weight: 700;
+    line-height: 1.9;
+    margin-bottom: 4px;
+}
+.project-deal {
+    font-size: 16px;
+    color: var(--primary-text-color);
+    letter-spacing:0.03em ;
+    line-height: 30px;
+}
+
+

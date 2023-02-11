@@ -1,0 +1,48 @@
+
+.modal-label-checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 20px;
+}
+.modal-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: none;
+    padding: o;
+    overflow: hidden;
+    clip: rect(0 0 0 0 );
+
+}
+
+
+.checkbox-custom{
+    height: 16px;
+    width: 15px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+  
+    
+}
+.checkbox-icon{
+    fill:currentColor;
+    transition: fill 250ms linear;
+}
+.modal-checkbox:checked + .checkbox-custom{
+
+background-color: var(--accent-color);
+color:var(--primary-bg-color);
+border-color: transparent;
+
+}
+
+.modal-checkbox:checked + .checkbox-custom > .checkbox-icon {
+    fill: var(--accent-color)
+}

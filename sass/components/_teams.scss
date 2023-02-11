@@ -1,0 +1,90 @@
+
+
+ .teams{
+    background-color: #f5f4fa;
+    &__title{
+        text-align: center;
+        color: var(--title-text-color);
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        line-height: 1.2;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+    &__group{
+        display: flex;
+    }
+    &__department{
+        background-color: var(--primary-bg-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+    &__picture{
+        margin-bottom: 30px;
+    }
+    &__name{
+        color: var(--title-text-color);
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.03em;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    &__activity{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    &__socials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    &__socials-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+         background-color:  var(--primary-bg-color);
+         border-radius: 50%;
+    
+         transition-property: background-color;
+         transition-duration: 250ms;
+         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+    }
+    &__socials-icon{
+        fill: #afb1b8;
+
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+
+.teams__socials-link:hover{
+    background-color:var(--btn-bg-color);
+}
+.teams__socials-link:hover .teams__socials-icon{
+    fill: var(--primary-bg-color);
+}
+.teams__socials-link:focus{
+    background-color:var(--btn-bg-color);
+}
+.teams__socials-link:focus .teams__socials-icon{
+    fill: var(--primary-bg-color);
+}
+    
+
+
