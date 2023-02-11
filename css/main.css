@@ -47,6 +47,7 @@ body {
 }
 
 .section {
+  max-width: 480px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -503,7 +504,7 @@ body {
 .customer__title {
   text-align: center;
   color: var(--title-text-color);
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.03em;
   line-height: 1.2;
@@ -511,6 +512,7 @@ body {
   margin-bottom: 50px;
 }
 .customer__our {
+  max-width: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,15 +525,6 @@ body {
   gap: 30px;
 }
 .customer__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 170px;
   height: 92px;
 }
