@@ -513,9 +513,9 @@ body {
 }
 .customer__our {
   max-width: 480px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 210px 210px;
+  grid-template-rows: 92px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -525,7 +525,6 @@ body {
   gap: 30px;
 }
 .customer__box {
-  width: 170px;
   height: 92px;
 }
 .customer__link {
