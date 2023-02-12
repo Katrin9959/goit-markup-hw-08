@@ -15,7 +15,8 @@ body {
 }
 
 .section {
-  max-width: 480px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }/*# sourceMappingURL=common.css.map */

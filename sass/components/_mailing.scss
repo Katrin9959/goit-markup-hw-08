@@ -1,20 +1,23 @@
 
 .mailing{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
     &__bloc-send{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #2f303A;
         border: 1px solid #757575;
         border-radius: 4px;
-        width: 358px;
+        width: 450px;
         height: 50px;
+
         font-weight: 400;
       font-size: 16px;
       line-height: calc(20 / 16);
       letter-spacing: 0.1em;
       padding: 0;
       color: var(--gray-40-txt-cl);
+      margin-bottom: 20px;
     
     }
     &__icon{
@@ -27,7 +30,8 @@
         gap:10px;
         width: 200px;
         height: 50px;
-        margin-left: 12px;
+    margin-left: auto;
+    margin-right: auto;
             text-align: center;
             padding: 10px 32px;
             background-color: var(--accent-color);

@@ -1,13 +1,19 @@
 .hero{
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    &--container{
+      margin-top: 118px;
+    }
 &__bunner{
     text-align: center;
     margin-top: auto;
     padding-top: 200px;
     padding-bottom: 200px;
-    width: 1600px;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 480px;
+    height: 400px;
+    margin-left: 0;
+    margin-right: 0;
     background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
    url(../images/mainfon.jpg); 
    
@@ -18,18 +24,21 @@
    }
    &__title {
     color:var(--primary-bg-color);
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
     letter-spacing: 0.06em;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-right: 0px;
     margin-bottom: 30px;
-    width: 696px;
+    text-align: center;
    margin-left: auto;
    margin-right: auto;
    }
    &__button{
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    height: 50px;
     padding: 10px 32px;
     background-color: var(--accent-color);
     color: var(--primary-bg-color);

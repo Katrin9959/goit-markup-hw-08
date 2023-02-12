@@ -7,24 +7,17 @@
         letter-spacing: 0.03em;
         line-height: 1.2;
         margin-top: 0px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     &__our{
-        max-width: 480px;
-   display: grid;
-   grid-template-columns: 210px 210px;
-   grid-template-rows: 92px;
-   justify-content: center;
-   align-items: center;
-    gap: 30px;
+    max-width: 480px;
+    margin-bottom: 30px;
     }
-&__box{
- 
-
+    &__box{
+    margin-bottom: 30px;
     height: 92px;
-   
-}
-&__link{
+       }
+    &__link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,13 +31,13 @@
       transition-property: border-color, cursor ;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-&__icon{
-    fill: #afb1b8;
-    transition-property: fill ;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    }
+    &__icon{
+     fill: #afb1b8;
+     transition-property: fill ;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
      .customer__link:hover {

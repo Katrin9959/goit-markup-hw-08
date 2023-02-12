@@ -15,51 +15,91 @@
     
   </head>
   <body>
-      <!-- <header class="header">
+      <header class="header">
       <div class="container header__main">
-        
-      <nav class="menu">
         <a class="logo" href="./index.html" rel="home">Web<span class="logo--accent">Studio</span></a>
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__page menu__page--current" href="./index.html">Студія</a>
-          </li>
-          <li class="menu__item" >
-            <a class="menu__page" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__page" href="./">Контакти</a>
-          </li>
-        </ul>
-     
-    </nav>
-    <ul class="contact">
-       
-      <li class="contact__all">
-       
-         <a class="contact__mail" href="mailto:info@devstudio.com">
-          <svg class="contact__icon" width="16" height="12">
-            <use href="./images/icons.svg#icon-envelope-hover"></use>
-           </svg>
-          info@devstudio.com</a>
-       
-    </li>
+        <button type="button" class="menu__button is__open" 
+        aria-expanded="false" 
+        aria-controls="mobile__menu"
+        js-menu-container>
+          <svg class="" width="40" height="40" 
+          aria-label="переключатель мобільного меню">
+            <use class="icon__close" href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            <use class="icon__menu" href="./images/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
+        <div class="mobile__menu is__open" id="mobile__menu" js-open-menu>
+          <div class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__page navigation__page--current" href="./index.html">Студія</a>
+              </li>
+              <li class="navigation__item" >
+                <a class="navigation__page" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__page" href="./">Контакти</a>
+              </li>
+            </ul>
+          </div>
 
-      <li class="contact__all">
-       
-         <a class="contact__tel" href="tel:+380961111111">
-          <svg class="contact__icon" width="10" height="16">
-            <use href="./images/icons.svg#icon-smartphone"></use>
-           </svg>
-          +38 096 111-11-11</a>
-     
+          <div class="contacts">  
+      <ul class="contacts__list"> 
+        <li class="contacts__all">
+           <a class="contacts__mail" href="mailto:info@devstudio.com">
+            info@devstudio.com</a>      
       </li>
+        <li class="contacts__all">
+           <a class="contacts__tel" href="tel:+380961111111">
+            +38 096 111-11-11</a>
+        </li>
+      </ul>
+          </div>
+        </div>
+  
+        <!-- <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__page menu__page--current" href="./index.html">Студія</a>
+            </li>
+            <li class="menu__item" >
+              <a class="menu__page" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__page" href="./">Контакти</a>
+            </li>
+          </ul>
+       
+      </nav>
+      <ul class="contact">
+         
+        <li class="contact__all">
+         
+           <a class="contact__mail" href="mailto:info@devstudio.com">
+            <svg class="contact__icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope-hover"></use>
+             </svg>
+            info@devstudio.com</a>
+         
+      </li>
+  
+        <li class="contact__all">
+         
+           <a class="contact__tel" href="tel:+380961111111">
+            <svg class="contact__icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+             </svg>
+            +38 096 111-11-11</a>
+       
+        </li>
+  
+      </ul> -->
 
-    </ul>
   </div>
-    </header> -->
-    <main>
-      <!-- <div class="hero">
+    </header> 
+    <!-- <main>
+
+  <div class="hero">
       <section class="section hero__bunner">
         <div class="container hero__container">
         <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
@@ -68,30 +108,27 @@
         </button>
         </div>
       </section>
-      </div>  -->
+      </div>  
  
-<!--  <section class="section details">
 
-        <div class="container details__conteiner">
+         <section class="section details">
+
+        <div class="container details__container">
         <h2 class="details__title">НАШІ ПЕРЕВАГИ</h2>
         <ul class="details__main">
-         
-
           <li class="details__item">
-           <div class="details__link">
-          <svg class="details__icon" width="70" height="70">
-            <use href="./images/icons.svg#icon-antenna-1"></use>
-           </svg>
-          </div>
-          <div class="skills">
-            <li class="skills__group"> 
+             <div class="details__link">
+             <svg class="details__icon" width="70" height="70">
+              <use href="./images/icons.svg#icon-antenna-1"></use>
+            </svg>
+             </div>
+             <div class="skills">
               <h3 class="skills__title" >УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="skills__essence">
                 Ідейні міркування, навіть початок повсякденної роботи з формування
                 позиції
               </p>
-            </li>
-          </div>
+             </div>
         </li>
 
 
@@ -102,13 +139,11 @@
           </svg>
           </div>
           <div class="skills">
-          <li class="skills__group">
             <h3 class="skills__title">ПУНКТУАЛЬНІСТЬ</h3>
             <p class="skills__essence" >
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе
             </p>
-          </li>
         </div>
        </li>
 
@@ -120,12 +155,11 @@
         </svg>
         </div>
         <div class="skills">
-          <li class="skills__group">
+      
             <h3 class="skills__title">ПЛАНУВАННЯ</h3>
             <p class="skills__essence" >
               Так само консультація з широким активом значною мірою зумовлює
             </p>
-          </li>
         </div>
      </li>
 
@@ -137,24 +171,46 @@
       </svg>
       </div>
       <div class="skills">
-        <li class="skills__group">
+     
           <h3 class="skills__title" >СУЧАСНІ ТЕХНОЛОГІЇ</h3>
           <p class="skills__essence">
             Значемість цих проблем настільки очевидна,що реалізація планових
             завдань
           </p>
-        </li>
       </div>
 
      </li>     
     </ul>
         </div>
       </section>
-  -->
-    
-      <!-- <section class="section teams">
+
+     <section class="section worklist">
+        <div class="container worklist__container">
+        <h2 class="worklist__main-title">ЧИМ МИ ЗАЙМАЄМОСЯ</h2>
+        <ul class="worklist__block">
+          <li class="worklist__img"><img src="./images/box1.jpg" alt="Розробка" width="370" height="294">
+         <div class="worklist__applications">
+            <h3 class="worklist__title">ДЕСКТОПНІ ДОДАТКИ</h3>
+          </div>
+          </li>
+          <li class="worklist__img"><img src="./images/box2.jpg" alt="Дизайн" width="370" height="294">
+            <div class="worklist__applications">
+            <h3 class="worklist__title">МОБІЛЬНІ ДОДАТКИ</h3>
+        </div>
+          </li>
+          <li class="worklist__img"><img src="./images/box3.jpg" alt="Аналітика" width="370" height="294">
+          <div class="worklist__applications">
+            <h3 class="worklist__title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>
+        </div>
+          </li>
+        </ul>
+        </div>
+      </section>
+
+
+         <section class="section teams">
         <div class="container teams__best">
-        <h2  class="teams__title">НАША КОМАНДА</h2>
+        <h2  class="teams__title">Наша команда</h2>
         <ul class="teams__group">
           <li class="teams__department">
             <img class="teams__picture" src="./images/team1.jpg" alt="Спеціаліст №1" width="270" height="260">
@@ -306,8 +362,8 @@
           </li>
         </ul>
         </div>
-      </section> -->
-      <section class="section customer">
+      </section>  
+       <section class="section customer"> 
         <div class="container customer__bloc">
           <h2 class="customer__title">ПОСТІЙНІ КЛІЄНТИ</h2>
           <ul class="customer__our">
@@ -367,9 +423,9 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>  
     </main>
-    <!-- <footer class="footer">
+      <footer class="footer">
       <div class="container footer__bloc">
         <div>
         <a class="footer__logo" href="./index.html" rel="home">Web<span class="footer__logo--accent">Studio</span></a>
@@ -429,7 +485,7 @@
     </div>
     </div>
       
-    </footer> -->
+    </footer>  -->
     <!-- <div  class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="modal__btn">
@@ -499,6 +555,7 @@
       </div>
      </div> -->
       <script src="./js/modal.js"></script> 
+      <script src="./js/mobile-menu.js"></script> 
     </body>
     
     </html>
