@@ -10,12 +10,41 @@
         margin-bottom: 30px;
     }
     &__our{
-    max-width: 480px;
+   
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px){
+      display: flex;
+      flex-flow: wrap;
+      gap:30px;
+
+     }
+     @media screen and (min-width: 1200px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+     }
     }
+
+
     &__box{
     margin-bottom: 30px;
     height: 92px;
+    @media screen and (min-width: 768px){
+       display: flex;
+       width: calc(( 100% - 30px*2) / 3);
+       height: 92px;
+       margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 92px;
+        width: 170px;
+        margin-bottom: 0;
+    }
        }
     &__link{
     display: flex;
