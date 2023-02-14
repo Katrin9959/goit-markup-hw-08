@@ -74,12 +74,7 @@ body {
 }
 
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
 }
 .menu__list {
   display: -webkit-box;
@@ -90,6 +85,40 @@ body {
 }
 .menu__item:not(:last-child) {
   margin-right: 50px;
+}
+@media screen and (min-width: 480px) {
+  .menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.header__menu-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  color: transparent;
+}
+@media screen and (min-width: 1200px) {
+  .header__menu-btn {
+    display: none;
+  }
 }
 
 .logo {
@@ -146,11 +175,21 @@ body {
 }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .contact {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+  }
 }
 .contact__all {
   display: -webkit-box;
@@ -237,20 +276,18 @@ body {
 }
 
 .hero {
-  max-width: 480px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
-.hero--container {
-  margin-top: 118px;
-}
 .hero__bunner {
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  width: 480px;
-  height: 400px;
   margin-left: 0;
   margin-right: 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mainfon.jpg);
@@ -339,9 +376,15 @@ body {
     gap: 30px;
   }
 }
+@media screen and (min-width: 480px) {
+  .details__item {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .details__item {
     width: calc((100% - 30px) / 2);
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {

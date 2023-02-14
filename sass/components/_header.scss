@@ -4,15 +4,14 @@
     border-bottom: 1px solid #ececec;
     &__main{
         display: flex;
-      
     }
 }
 
 
 
 .menu{
-    display: flex;
-    align-items: center;
+    display: none;
+
     &__list{
         display: flex;
         padding-inline-start: 0px;
@@ -22,7 +21,34 @@
         margin-right: 50px;
     }
 }
+
+    @media screen and (min-width: 480px){
+    display: none;
+
+    }
+    @media screen and (min-width: 1200px){
+        display: flex;
+        align-items: center;
+      
+    }
 }
+
+.header__menu-btn{
+    display: flex;
+  
+    align-items: center;
+    background-color: #fff;
+    margin-left: auto;
+  
+    padding: 0;
+    border: none;
+    color: transparent;
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+
 
 
 .logo{

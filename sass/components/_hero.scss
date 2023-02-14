@@ -1,17 +1,19 @@
-.hero{
-    max-width: 480px;
+.hero {
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    &--container{
-      margin-top: 118px;
+    @media screen and (min-width: 768px){
+       
     }
+    @media screen and (min-width: 1200px){
+    }
+
 &__bunner{
     text-align: center;
+    justify-content: center;
     margin-top: auto;
     padding-top: 200px;
     padding-bottom: 200px;
-    width: 480px;
-    height: 400px;
     margin-left: 0;
     margin-right: 0;
     background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
