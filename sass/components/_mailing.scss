@@ -3,6 +3,7 @@
     @media screen and (min-width: 1200px){ 
         display: flex;
        flex-wrap: nowrap;
+       gap: 12px;
     
     }
     &__bloc-send{
@@ -12,7 +13,7 @@
         background-color: #2f303A;
         border: 1px solid #757575;
         border-radius: 4px;
-        width: 450px;
+        width: 100%;
         height: 50px;
 
         font-weight: 400;
@@ -22,7 +23,15 @@
       padding: 0;
       color: var(--gray-40-txt-cl);
       margin-bottom: 20px;
-     
+
+      @media screen and (min-width: 768px)
+      {
+        width: 450px;
+      }
+      
+      @media screen and (min-width: 1200px){
+        width: 358px;
+      }
       
     
     }
