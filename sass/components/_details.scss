@@ -21,4 +21,23 @@
      border-radius: 4px;
      margin-bottom: 30px;
 }
+&__main{
+    @media screen and (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    }
+    @media screen and (min-width: 1200px){
+       
+    }
+}
+&__item{
+    @media screen and (min-width: 768px){
+
+    width: calc(( 100% - 1 * 30px) / 2);
+}
+@media screen and (min-width: 1200px){
+    width: calc(( 100% - 3 * 30px) / 4);
+}
+}
 }

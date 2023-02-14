@@ -329,6 +329,26 @@ body {
   border-radius: 4px;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .details__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .details__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .details__item {
+    width: calc((100% - 90px) / 4);
+  }
+}
 
 .skills {
   margin-top: 0;
