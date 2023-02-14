@@ -23,8 +23,9 @@
     }
 }
 
-    @media screen and (min-width: 480px){
-    display: none;
+    @media screen and (min-width: 768px){
+        display: flex;
+        align-items: center;
 
     }
     @media screen and (min-width: 1200px){
@@ -44,7 +45,7 @@
     padding: 0;
     border: none;
     color: transparent;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
     width: 40px;
@@ -67,7 +68,15 @@
     font-size: 26px;
     text-decoration: none;
     letter-spacing: 0.03em;
- 
+    @media screen and (min-width: 768px){
+      padding: 24px 0;
+      margin-right: 84px;
+    }
+    @media screen and (min-width: 1200px){
+      
+    }
+
+
 }
 .logo--accent{
   color:#000;
