@@ -7,7 +7,17 @@
     padding-bottom: 60px;
     &__bloc{
      
-       
+        @media screen and (min-width: 768px){
+    
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      
+        }
+        @media screen and (min-width: 1200px){ 
+        flex-wrap: nowrap;
+         align-items: center;
+        }
       
     }
  &__cont{
