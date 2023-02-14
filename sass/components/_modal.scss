@@ -23,11 +23,16 @@
     }
 
 .modal {
-    
+    max-width: 450px;
+    width: 100%;
     width: 528px;
     background-color: var(--primary-bg-color);
     position: relative;
+    @media screen and (min-width: 1200px) {
     
+        max-width: none;
+        width: 528px;
+      }
     border-radius: 4px;
     transition: transform 250ms liniar;
     padding: 40px;
@@ -108,7 +113,7 @@ border-radius: 4px;
     padding: 7px 0;
     padding-left: 35px;
     padding-right: 5px;
-    width: 448px;
+    width: 100%;
     height: 40px;
     outline: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
